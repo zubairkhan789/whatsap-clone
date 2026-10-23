@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --wa-green: #00a884;
+    --wa-green-hover: #02906f;
+    --wa-green-dark: #008069;
+    --wa-green-light: #25d366;
+  }
+
+  body {
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+}
+
+/* Custom sleek WhatsApp scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(134, 150, 160, 0.25);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(134, 150, 160, 0.45);
+}
+
+/* WhatsApp chat background doodle pattern overlay */
+.wa-chat-bg-light {
+  background-color: #efeae2;
+  background-image: radial-gradient(#d1d7db 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.wa-chat-bg-dark {
+  background-color: #0b141a;
+  background-image: radial-gradient(#182229 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Audio waveform progress animation */
+@keyframes wavePulse {
+  0%, 100% { height: 6px; }
+  50% { height: 18px; }
+}
+
+.animate-wave-bar {
+  animation: wavePulse 1s ease-in-out infinite;
+}

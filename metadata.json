@@ -1,0 +1,6 @@
+{
+  "name": "WhatsApp Web - Modern Messaging & Calling",
+  "description": "Complete WhatsApp Web messaging platform with real-time chats, WebRTC voice and video calls, audio messages, status stories, group chats, and dark mode.",
+  "requestFramePermissions": ["camera", "microphone", "clipboard-read", "clipboard-write"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
